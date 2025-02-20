@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { ContactShortDisplay } from "./ContactShortDisplay";
+import contactsData from '../db.json';
 type ContactsComponentState = {
 	isLoaded: boolean,
 	items: any,
@@ -16,8 +17,11 @@ class ContactsComponent extends Component<{}, ContactsComponentState> {
 		};
 	}
 	componentDidMount() {
-		fetch("/contacts")
-			.then(res => res.json())
+		fetch("http://localhost:3001/contacts")
+			.then(res => {
+				return res.json()
+				// return contactsData.contacts;
+			})
 			.then(
 				result => {
 					console.log(result);

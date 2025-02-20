@@ -62,7 +62,9 @@ export default function ContactForm(props) {
 					value={gender}
 					onChange={e => setGender(e.target.value)}
 					required
+                    placeholder={"gender"}
 				>
+					<option value="" disabled> Select Gender</option>
 					<option key="" />
 					{["MALE", "FEMALE"].map(gender => (
 						<option key={gender}>{gender}</option>

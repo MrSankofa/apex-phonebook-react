@@ -8,6 +8,7 @@ function App() {
     return (
         <div className="App">
             {error}
+            <h1>learn react</h1>
             <ContactForm
                 onError={setError}
                 onSuccess={setSavedContact}
