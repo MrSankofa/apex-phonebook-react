@@ -37,8 +37,10 @@ function App() {
     }
 
     const deleteContact = (targetId: number) => {
-        console.log("attempting to delete: ", targetId)
+        console.log("attempting to delete id: ", targetId)
+        console.log("State before delete: ", contacts);
         setContacts( prev => prev.filter( contact => contact.id !== targetId));
+        console.log("State after delete: ", contacts);
     }
 
     return (
