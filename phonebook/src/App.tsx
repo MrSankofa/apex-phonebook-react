@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, { useEffect, useState } from "react";
 import "./App.css";
 import ContactsComponent from "./contact/contacts-component";
 import ContactForm from "./contact/ContactForm";
@@ -8,52 +8,54 @@ type Contact = {
     lastName: string;
     email: string;
     gender: "MALE" | "FEMALE";
-    id: number
-}
+    id: number;
+};
 
 function App() {
-    // TODO: how do you specify the types for these
-    const [savedContact, setSavedContact] = useState(null);
-    const [error, setError] = useState(null);
+    const [contacts, setContacts] = useState<Contact[]>([]);
+    const [error, setError] = useState<string | null>(null);
     const [isLoaded, setIsLoaded] = useState(false);
 
-    const [contacts, setContacts] = useState([]);
-
+    // Fetch contacts on mount
     useEffect(() => {
-        fetch("http://localhost:3001/contacts")
-            .then(res => {
-                return res.json();
-            })
-            .then((payload) => {
-                setContacts(payload);
+        const fetchContacts = async () => {
+            try {
+                const res = await fetch("http://localhost:3001/contacts");
+                if (!res.ok) throw new Error("Failed to fetch contacts");
+                const data = await res.json();
+                setContacts(data);
+            } catch (error) {
+                setError(error.message || "Server Error");
+            } finally {
                 setIsLoaded(true);
-            })
-            .catch( error => setError({message: error || "Server Error"}));
-    }, [])
+            }
+        };
 
+        fetchContacts();
+    }, []);
 
     const handleSuccessAdd = (newContact: Contact) => {
-        setContacts(prev => [...prev, newContact]);
-    }
+        setContacts((prev) => [...prev, newContact]);
+    };
 
     const deleteContact = (targetId: number) => {
-        console.log("attempting to delete id: ", targetId)
-        console.log("State before delete: ", contacts);
-        setContacts( prev => prev.filter( contact => contact.id !== targetId));
-        console.log("State after delete: ", contacts);
-    }
+        console.log("Attempting to delete id:", targetId);
+
+        setContacts((prev) => {
+            const updatedContacts = prev.filter((contact) => contact.id !== targetId);
+            console.log("Updated Contacts:", updatedContacts); // Log after state updates
+            return updatedContacts;
+        });
+    };
 
     return (
         <div className="App">
-            {error}
-            <h1>learn react</h1>
-            <ContactForm
-                onError={setError}
-                onSuccess={handleSuccessAdd}
-                contact={savedContact}
-            />
-            <ContactsComponent items={contacts} error={error} isLoaded={isLoaded} handleDelete={deleteContact}/>
+            {error && <p style={{ color: "red" }}>{error}</p>}
+            <h1>Learn React</h1>
+            <ContactForm onError={setError} onSuccess={handleSuccessAdd} />
+            <ContactsComponent items={contacts} error={error} isLoaded={isLoaded} handleDelete={deleteContact} />
         </div>
     );
 }
+
 export default App;

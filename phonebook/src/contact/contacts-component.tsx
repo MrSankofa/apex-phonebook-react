@@ -9,7 +9,7 @@ type ContactsComponentState = {
 
 const ContactsComponent = ({ error, isLoaded, items , handleDelete}) => {
 	if (error) {
-		return <div>Error: {error.message}</div>;
+		return <div style={{color: "red" }}>Error: {error.message || error}</div>;
 	} else if (!isLoaded) {
 		return <div>Loading...</div>;
 	} else {
