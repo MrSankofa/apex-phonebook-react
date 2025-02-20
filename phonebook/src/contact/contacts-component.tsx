@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { ContactShortDisplay } from "./ContactShortDisplay";
 type ContactsComponentState = {
 	isLoaded: boolean,
-	items: any,
+	items: Contact[],
 	error: any,
 
 };
@@ -14,7 +14,7 @@ export type Contact = {
 	email: string;
 }
 
-const ContactList = ({items, error, isLoaded}) => {
+const ContactList = ({items, error, isLoaded}: ContactsComponentState) => {
 
 	if (error) {
 		return <div>Error: {error}</div>;
@@ -23,7 +23,7 @@ const ContactList = ({items, error, isLoaded}) => {
 	} else {
 		return (
 			<ul>
-				{items.map((item, index) => (
+				{items.map((item: Contact, index: number) => (
 					<li key={index}>
 						<ContactShortDisplay contact={item} />
 					</li>

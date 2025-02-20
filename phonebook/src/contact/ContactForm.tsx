@@ -7,10 +7,10 @@ export default function ContactForm(props) {
 	const handleSubmit = event => {
 		event.preventDefault();
 		console.log(`
-      email: ${email}
-      firstName: ${firstName}
-      lastName: ${lastName}
-      gender: ${gender}`);
+		  email: ${email}
+		  firstName: ${firstName}
+		  lastName: ${lastName}
+		  gender: ${gender}`);
 		fetch("http://localhost:3001/contacts", {
 			method: "POST",
 			mode: "cors",

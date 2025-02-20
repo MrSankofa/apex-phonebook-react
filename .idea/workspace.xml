@@ -5,20 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8b629277-5d72-4482-a032-6fed7e5e2cc4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/apex-phonebook-react.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_2_20_25,_3_07 PM_[Changes]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_2_20_25__3_07PM__Changes_.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/phonebook/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/phonebook/src/ContactForm.test.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/phonebook/src/ContactList.test.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/phonebook/src/App.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/phonebook/src/App.test.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/phonebook/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/phonebook/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phonebook/src/ContactList.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/phonebook/src/ContactList.test.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/phonebook/src/contact/ContactForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/phonebook/src/contact/ContactForm.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/phonebook/src/contact/contacts-component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/phonebook/src/contact/contacts-component.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phonebook/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/phonebook/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,7 +155,7 @@
       <updated>1740052668193</updated>
       <workItem from="1740052669601" duration="25567000" />
       <workItem from="1740081937251" duration="608000" />
-      <workItem from="1740082547748" duration="5808000" />
+      <workItem from="1740082547748" duration="11415000" />
     </task>
     <servers />
   </component>

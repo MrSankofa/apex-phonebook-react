@@ -17,12 +17,12 @@ npm run server
    5. how to mock the fetch
 
 ```typescript
- jest.spyOn(global, "fetch").mockImplementation(() =>
-            Promise.resolve({
-                ok: true,
-                json: () => Promise.resolve(mockContacts),
-            } as Response)
-        );
+ global.fetch = jest.fn(() =>
+        Promise.resolve({
+           ok: true,
+           json: async () => mockContacts, // Ensure this matches the expected format
+        })
+) as Mock;
 ```
    6. also the afterEach jest.restoreAllMocks
    7.  make sure you don't forget to use async await for the screen
@@ -30,10 +30,11 @@ npm run server
 5. mock fetch and return data to test contact list on failed calls
    6. remember to use the jest.spyOn the same way just use promise.reject instead of Promise resoolve
 6. Refactor the contacts component, app, and contact form
-   7. Lift the state out of the contacts form, it should only render the contacts given it
-   8. the app should have state for the contacts
-   9. the contact form no longer needs the savedContacts prop
-   10. on success save, update the props given to the contacts list, make sure the form is cleared on save, and persists on failure
+   7. Mistake: don't forget to initialize useEffect default state
+      7. Lift the state out of the contacts form, it should only render the contacts given it
+      8. the app should have state for the contacts
+      9. the contact form no longer needs the savedContacts prop
+      10. on success save, update the props given to the contacts list, make sure the form is cleared on save, and persists on failure
 11. Add the create functionality to the contacts list
 12. Add the delete functionality to the contacts list
 12. Add update functionality to the contacts list

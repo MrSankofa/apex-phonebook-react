@@ -22,9 +22,13 @@ function App() {
             ).catch( error => {
                 setError(error);
         });
-    });
+    }, []);
 
+    // TODO: don't forget to make the request to the api
     const handleSuccessAddContact = () => {}
+
+    // TODO: don't forget to make the request to the api
+    const handleDeleteContact = () => {}
 
     return (
         <div className="App">
