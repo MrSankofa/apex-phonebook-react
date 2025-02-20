@@ -42,6 +42,7 @@ export default function ContactForm(props) {
 					value={firstName}
 					onChange={e => setFirstName(e.target.value)}
 					required
+					data-testid="firstName"
 				/>
 			</label>
 			<label>
