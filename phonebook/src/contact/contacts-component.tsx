@@ -16,6 +16,7 @@ class ContactsComponent extends Component<{}, ContactsComponentState> {
 			items: []
 		};
 	}
+
 	componentDidMount() {
 		fetch("http://localhost:3001/contacts")
 			.then(res => {

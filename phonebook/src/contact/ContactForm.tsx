@@ -23,6 +23,14 @@ export default function ContactForm(props) {
 			.then(res => res.json())
 			.then(
 				result => {
+					// clear the form
+					setFirstName("");
+					setLastName("");
+					setEmail("");
+					setGender("");
+
+					// update the ContactsComponent List
+
 					props.onSuccess(result);
 				},
 				error => {
