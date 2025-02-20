@@ -6,51 +6,31 @@ type ContactsComponentState = {
 	error: any,
 
 };
-class ContactsComponent extends Component<{}, ContactsComponentState> {
-	constructor(props) {
-		super(props);
-		this.state = {
-			error: null,
-			isLoaded: false,
-			items: []
-		};
-	}
-	componentDidMount() {
-		fetch("http://localhost:3001/contacts")
-			.then(res => res.json())
-			.then(
-				result => {
-					console.log(result);
-					this.setState({
-						isLoaded: true,
-						items: result || []
-					});
-				},
-				error => {
-					this.setState({
-						isLoaded: true,
-						error
-					});
-				}
-			);
-	}
-	render() {
-		const { error, isLoaded, items } = this.state;
-		if (error) {
-			return <div>Error: {error.message}</div>;
-		} else if (!isLoaded) {
-			return <div>Loading...</div>;
-		} else {
-			return (
-				<ul>
-					{items.map((item, index) => (
-						<li key={index}>
-							<ContactShortDisplay contact={item} />
-						</li>
-					))}
-				</ul>
-			);
-		}
+
+export type Contact = {
+	firstName: string;
+	lastName: string;
+	gender: "MALE" | "FEMALE";
+	email: string;
+}
+
+const ContactList = ({items, error, isLoaded}) => {
+
+	if (error) {
+		return <div>Error: {error}</div>;
+	} else if (!isLoaded) {
+		return <div>Loading...</div>;
+	} else {
+		return (
+			<ul>
+				{items.map((item, index) => (
+					<li key={index}>
+						<ContactShortDisplay contact={item} />
+					</li>
+				))}
+			</ul>
+		);
 	}
 }
-export default ContactsComponent;
+
+export default ContactList;

@@ -1,19 +1,40 @@
-import React, { useState } from "react";
+import React, {useEffect, useState} from "react";
 import "./App.css";
-import ContactsComponent from "./contact/contacts-component";
+
 import ContactForm from "./contact/ContactForm";
+import ContactList from "./contact/contacts-component";
 function App() {
-    const [savedContact, setSavedContact] = useState(null);
+
+    const [contacts, setContacts] = useState([]);
     const [error, setError] = useState(null);
+    const [isLoaded, setIsLoaded] = useState(false);
+
+    useEffect(() => {
+        fetch("http://localhost:3001/contacts")
+            .then(res => res.json())
+            .then(
+                result => {
+                    console.log(result);
+                    setContacts(prev => result || []);
+                    setIsLoaded(true);
+                    setError(null);
+                }
+            ).catch( error => {
+                setError(error);
+        });
+    });
+
+    const handleSuccessAddContact = () => {}
+
     return (
         <div className="App">
             {error}
+            <h1>learn react</h1>
             <ContactForm
                 onError={setError}
-                onSuccess={setSavedContact}
-                contact={savedContact}
+                onSuccess={handleSuccessAddContact}
             />
-            <ContactsComponent />
+            <ContactList items={contacts} error={error} isLoaded={isLoaded} />
         </div>
     );
 }

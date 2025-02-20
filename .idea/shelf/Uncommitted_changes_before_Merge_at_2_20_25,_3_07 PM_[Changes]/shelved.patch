@@ -1,0 +1,14 @@
+Index: README.md
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+># apex-phonebook-react
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/README.md b/README.md
+--- a/README.md	(revision ce5d3db53ba836958a0200b944c3587b13e53790)
++++ b/README.md	(date 1740082033483)
+@@ -1,1 +1,1 @@
+-# apex-phonebook-react
+\ No newline at end of file
++# apex-phonebook-react

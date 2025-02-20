@@ -4,7 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b629277-5d72-4482-a032-6fed7e5e2cc4" name="Changes" comment="" />
+    <list default="true" id="8b629277-5d72-4482-a032-6fed7e5e2cc4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/apex-phonebook-react.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_2_20_25,_3_07 PM_[Changes]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Merge_at_2_20_25__3_07PM__Changes_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/phonebook/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/phonebook/src/ContactForm.test.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/phonebook/src/ContactList.test.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phonebook/src/App.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/phonebook/src/App.test.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phonebook/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/phonebook/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phonebook/src/contact/ContactForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/phonebook/src/contact/ContactForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phonebook/src/contact/contacts-component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/phonebook/src/contact/contacts-component.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phonebook/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/phonebook/yarn.lock" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,7 +28,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="solution/clean-1" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -27,68 +42,58 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Jest.Contact Form: updates state for first name.executor&quot;: &quot;Run&quot;,
-    &quot;Jest.Mocked API Tests.Confirm that ContactsList is Populated with John on successful call.executor&quot;: &quot;Run&quot;,
-    &quot;Jest.Mocked API Tests.ContactsComponent Tests.should delete a contact without waitFor().executor&quot;: &quot;Run&quot;,
-    &quot;Jest.Mocked API Tests.should add a contact.executor&quot;: &quot;Run&quot;,
-    &quot;Jest.Mocked API Tests.shows error message on API failure.executor&quot;: &quot;Debug&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/brettcunningham/code-sankofa/study/typescript/interview-prep-react/apex-phonebook-react/phonebook/src&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs.jest.jest_package&quot;: &quot;/Users/brettcunningham/code-sankofa/study/typescript/interview-prep-react/apex-phonebook-react/phonebook/node_modules/react-scripts&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Applications/IntelliJ IDEA.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Jest.Contact Form Tests: .should be able to input data into fields.executor": "Run",
+    "Jest.Contact Form: updates state for first name.executor": "Run",
+    "Jest.Contact List Tests: .should handle failed contacts .executor": "Run",
+    "Jest.Mocked API Tests.Confirm that ContactsList is Populated with John on successful call.executor": "Run",
+    "Jest.Mocked API Tests.ContactsComponent Tests.should delete a contact without waitFor().executor": "Run",
+    "Jest.Mocked API Tests.should add a contact.executor": "Run",
+    "Jest.Mocked API Tests.shows error message on API failure.executor": "Debug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/brettcunningham/code-sankofa/study/typescript/interview-prep-react/apex-phonebook-react/phonebook/src",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs.jest.jest_package": "/Users/brettcunningham/code-sankofa/study/typescript/interview-prep-react/apex-phonebook-react/phonebook/node_modules/react-scripts",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "/Users/brettcunningham/code-sankofa/study/typescript/interview-prep-react/apex-phonebook-react/phonebook/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/phonebook/src" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="Contact Form: updates state for first name" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Jest.Contact List Tests: .should handle failed contacts ">
+    <configuration name="Contact Form Tests: .should be able to input data into fields" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <jest-package value="$PROJECT_DIR$/phonebook/node_modules/react-scripts" />
       <working-dir value="$PROJECT_DIR$/phonebook" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/phonebook/src/App.test.tsx" />
+      <test-file value="$PROJECT_DIR$/phonebook/src/ContactForm.test.tsx" />
       <test-names>
-        <test-name value="Contact Form: updates state for first name" />
+        <test-name value="Contact Form Tests: " />
+        <test-name value="should be able to input data into fields" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="Mocked API Tests.Confirm that ContactsList is Populated with John on successful call" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="Contact List Tests: .should handle failed contacts " type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <jest-package value="$PROJECT_DIR$/phonebook/node_modules/react-scripts" />
       <working-dir value="$PROJECT_DIR$/phonebook" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/phonebook/src/contact/AppAPI.test.tsx" />
+      <test-file value="$PROJECT_DIR$/phonebook/src/ContactList.test.tsx" />
       <test-names>
-        <test-name value="Mocked API Tests" />
-        <test-name value="Confirm that ContactsList is Populated with John on successful call" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="Mocked API Tests.ContactsComponent Tests.should delete a contact without waitFor()" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <jest-package value="$PROJECT_DIR$/phonebook/node_modules/react-scripts" />
-      <working-dir value="$PROJECT_DIR$/phonebook" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/phonebook/src/contact/AppAPI.test.tsx" />
-      <test-names>
-        <test-name value="Mocked API Tests" />
-        <test-name value="ContactsComponent Tests" />
-        <test-name value="should delete a contact without waitFor()" />
+        <test-name value="Contact List Tests: " />
+        <test-name value="should handle failed contacts " />
       </test-names>
       <method v="2" />
     </configuration>
@@ -118,13 +123,24 @@
       </test-names>
       <method v="2" />
     </configuration>
+    <configuration name="renders learn react link" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <jest-package value="$PROJECT_DIR$/phonebook/node_modules/react-scripts" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/phonebook/src/App.test.tsx" />
+      <test-names>
+        <test-name value="renders learn react link" />
+      </test-names>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Jest.Mocked API Tests.ContactsComponent Tests.should delete a contact without waitFor()" />
-        <item itemvalue="Jest.Mocked API Tests.should add a contact" />
+        <item itemvalue="Jest.Contact List Tests: .should handle failed contacts " />
+        <item itemvalue="Jest.Contact Form Tests: .should be able to input data into fields" />
+        <item itemvalue="Jest.renders learn react link" />
         <item itemvalue="Jest.Mocked API Tests.shows error message on API failure" />
-        <item itemvalue="Jest.Mocked API Tests.Confirm that ContactsList is Populated with John on successful call" />
-        <item itemvalue="Jest.Contact Form: updates state for first name" />
+        <item itemvalue="Jest.Mocked API Tests.should add a contact" />
       </list>
     </recent_temporary>
   </component>
@@ -145,6 +161,8 @@
       <option name="presentableId" value="Default" />
       <updated>1740052668193</updated>
       <workItem from="1740052669601" duration="25567000" />
+      <workItem from="1740081937251" duration="608000" />
+      <workItem from="1740082547748" duration="5808000" />
     </task>
     <servers />
   </component>

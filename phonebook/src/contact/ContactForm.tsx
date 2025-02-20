@@ -42,6 +42,7 @@ export default function ContactForm(props) {
 					value={firstName}
 					onChange={e => setFirstName(e.target.value)}
 					required
+					data-testid="firstName"
 				/>
 			</label>
 			<label>
@@ -52,6 +53,7 @@ export default function ContactForm(props) {
 					value={lastName}
 					onChange={e => setLastName(e.target.value)}
 					required
+					data-testid="lastName"
 				/>
 			</label>
 
@@ -63,6 +65,7 @@ export default function ContactForm(props) {
 					onChange={e => setGender(e.target.value)}
 					required
 				>
+					<option value="" data-testid="genderDropdown">Select Gender</option>
 					<option key="" />
 					{["MALE", "FEMALE"].map(gender => (
 						<option key={gender}>{gender}</option>
@@ -78,6 +81,7 @@ export default function ContactForm(props) {
 					value={email}
 					onChange={e => setEmail(e.target.value)}
 					required
+					data-testid="email"
 				/>
 			</label>
 
