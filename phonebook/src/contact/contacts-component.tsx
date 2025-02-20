@@ -20,7 +20,6 @@ class ContactsComponent extends Component<{}, ContactsComponentState> {
 		fetch("http://localhost:3001/contacts")
 			.then(res => {
 				return res.json()
-				// return contactsData.contacts;
 			})
 			.then(
 				result => {
