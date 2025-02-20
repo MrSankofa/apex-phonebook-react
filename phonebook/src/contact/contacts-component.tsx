@@ -16,7 +16,7 @@ class ContactsComponent extends Component<{}, ContactsComponentState> {
 		};
 	}
 	componentDidMount() {
-		fetch("http://localhost:3001/contacts")
+		fetch("/contacts")
 			.then(res => res.json())
 			.then(
 				result => {
