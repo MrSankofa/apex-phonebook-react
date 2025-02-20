@@ -3,7 +3,7 @@ import "./App.css";
 import ContactsComponent from "./contact/contacts-component";
 import ContactForm from "./contact/ContactForm";
 
-type Contact = {
+export type Contact = {
     firstName: string;
     lastName: string;
     email: string;

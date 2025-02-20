@@ -16,7 +16,7 @@ const ContactsComponent = ({ error, isLoaded, items , handleDelete}) => {
 		return (
 			<ul>
 				{items.map((item, index) => (
-					<li key={index}>
+					<li key={index} style={{listStyle: "none"}}>
 						<ContactShortDisplay contact={item}/>
 						<button data-testid={"button" + index} onClick={() => handleDelete(item.id)}>delete</button>
 					</li>

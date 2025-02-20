@@ -1,9 +1,9 @@
 import React, {useState} from "react";
 import {render, screen, fireEvent, waitFor, waitForElementToBeRemoved, act} from "@testing-library/react";
-import App from "../App";
+import App, {Contact} from "../App";
 import ContactsComponent from "./contacts-component";
 
-const mockContacts = [
+const mockContacts: Contact[] = [
     { id: 1, firstName: "John", lastName: "Doe", email: "john@example.com", gender: "MALE" }
 ];
 
