@@ -1,9 +1,32 @@
-import React from "react";
-export default function ContactForm(props) {
+import React, {useEffect, useState} from "react";
+import {Contact} from "./contacts-component";
+
+
+type ContactFormProps = {
+	onSuccess: (contact: Contact) => void;
+	onError: (error: any) => void;
+	editContact?: Contact | null
+	onEdit: (targetContact: Contact) => void;
+}
+
+
+export default function ContactForm({onSuccess, onError, editingContact, onEdit}) {
 	const [firstName, setFirstName] = React.useState("");
 	const [lastName, setLastName] = React.useState("");
 	const [gender, setGender] = React.useState("");
 	const [email, setEmail] = React.useState("");
+	const [id, setId] = useState<number | null>(null);
+
+	useEffect(() => {
+		if(editingContact) {
+			setFirstName(editingContact.firstName);
+			setLastName(editingContact.lastName);
+			setGender(editingContact.gender);
+			setEmail(editingContact.email)
+			setId(editingContact.id)
+		}
+	}, [editingContact])
+
 	const handleSubmit = event => {
 		event.preventDefault();
 		console.log(`
@@ -11,24 +34,48 @@ export default function ContactForm(props) {
       firstName: ${firstName}
       lastName: ${lastName}
       gender: ${gender}`);
-		fetch("http://localhost:3001/contacts", {
-			method: "POST",
-			mode: "cors",
-			cache: "no-cache",
-			headers: {
-				"Content-Type": "application/json"
-			},
-			body: JSON.stringify({ firstName, lastName, email, gender })
-		})
-			.then(res => res.json())
-			.then(
-				result => {
-					props.onSuccess(result);
+
+
+		if(!editingContact) {
+			fetch("http://localhost:3001/contacts", {
+				method: "POST",
+				mode: "cors",
+				cache: "no-cache",
+				headers: {
+					"Content-Type": "application/json"
 				},
-				error => {
-					props.onError(error);
-				}
-			);
+				body: JSON.stringify({ firstName, lastName, email, gender })
+			})
+				.then(res => res.json())
+				.then(
+					result => {
+						onSuccess(result);
+					},
+					error => {
+						onError(error);
+					}
+				);
+		} else {
+			fetch(`http://localhost:3001/contacts/${editingContact.id}`, {
+				method: id ? "PUT" : "POST",
+				mode: "cors",
+				cache: "no-cache",
+				headers: { "Content-Type": "application/json"},
+				body: JSON.stringify({id, firstName, lastName, email, gender})
+			})
+				.then( res => res.json())
+				.then( result => {
+					onEdit(result);
+				})
+				.catch( error => {
+					onError(error);
+				})
+
+
+
+		}
+
+
 	};
 	return (
 		<form onSubmit={handleSubmit}>
