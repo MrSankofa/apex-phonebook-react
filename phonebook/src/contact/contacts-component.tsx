@@ -24,7 +24,7 @@ const ContactList = ({items, error, isLoaded}: ContactsComponentState) => {
 		return (
 			<ul>
 				{items.map((item: Contact, index: number) => (
-					<li key={index}>
+					<li style={{listStyle: "none"}} key={index} data-testid={"button" + index}>
 						<ContactShortDisplay contact={item} />
 					</li>
 				))}

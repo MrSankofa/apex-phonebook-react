@@ -1,10 +1,9 @@
 import React from "react";
 import ContactsComponent, {Contact} from "./contact/contacts-component";
 
-import {act, render} from "@testing-library/react";
+import {act, fireEvent, render} from "@testing-library/react";
 import {screen} from "@testing-library/react";
 import App from "./App";
-
 
 describe("Contact List Tests", () => {
   const mockContacts: Contact[] = [
@@ -42,14 +41,10 @@ describe("Contact List Tests", () => {
     expect(await screen.getByText(content => content.includes("Brett"))).toBeInTheDocument()
   });
 
-    test("should be able to add a contact to state", async () => {
-      await act( async () => {
-        render(<App/>);
-      });
 
-      // const findBrett = screen.findByText((content) => content.includes("brett"));
-    });
 });
+
+
 
 
 

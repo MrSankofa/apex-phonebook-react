@@ -2,7 +2,7 @@ import React, {useEffect, useState} from "react";
 import "./App.css";
 
 import ContactForm from "./contact/ContactForm";
-import ContactList from "./contact/contacts-component";
+import ContactList, {Contact} from "./contact/contacts-component";
 function App() {
 
     const [contacts, setContacts] = useState([]);
@@ -25,7 +25,10 @@ function App() {
     }, []);
 
     // TODO: don't forget to make the request to the api
-    const handleSuccessAddContact = () => {}
+    const handleSuccessAddContact = (newContact: Contact) => {
+        console.log("Adding contacts was successful: ", newContact);
+        setContacts(prev => [...prev, newContact]);
+    }
 
     // TODO: don't forget to make the request to the api
     const handleDeleteContact = () => {}

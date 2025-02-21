@@ -1,5 +1,5 @@
 import React from 'react';
-import {act, fireEvent, getByTestId, render, screen} from '@testing-library/react';
+import {act, fireEvent, render} from '@testing-library/react';
 
 import ContactForm from "./contact/ContactForm";
 
@@ -36,4 +36,7 @@ describe("Contact Form Tests: ", () => {
       expect(genderDropdown).toHaveValue("MALE")
       expect(email).toHaveValue("c@gmail.com")
     })
+
+
 })
+

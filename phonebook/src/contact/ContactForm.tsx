@@ -6,7 +6,7 @@ export default function ContactForm(props) {
 	const [email, setEmail] = React.useState("");
 	const handleSubmit = event => {
 		event.preventDefault();
-		console.log(`
+		console.log(`Handling submit
 		  email: ${email}
 		  firstName: ${firstName}
 		  lastName: ${lastName}
@@ -23,6 +23,10 @@ export default function ContactForm(props) {
 			.then(res => res.json())
 			.then(
 				result => {
+					setFirstName("")
+					setLastName("")
+					setGender("")
+					setEmail("")
 					props.onSuccess(result);
 				},
 				error => {
@@ -64,6 +68,7 @@ export default function ContactForm(props) {
 					value={gender}
 					onChange={e => setGender(e.target.value)}
 					required
+					data-testid="gender"
 				>
 					<option value="" data-testid="genderDropdown">Select Gender</option>
 					<option key="" />
