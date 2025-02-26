@@ -6,13 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8b629277-5d72-4482-a032-6fed7e5e2cc4" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phonebook/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/phonebook/db.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phonebook/src/App.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/phonebook/src/App.test.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phonebook/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/phonebook/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phonebook/src/ContactForm.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/phonebook/src/ContactForm.test.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phonebook/src/ContactList.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/phonebook/src/ContactList.test.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phonebook/src/contact/ContactForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/phonebook/src/contact/ContactForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phonebook/src/contact/contacts-component.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/phonebook/src/contact/contacts-component.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,29 +29,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Jest.Contact Form Tests: .should be able to input data into fields.executor": "Run",
-    "Jest.Contact Form: updates state for first name.executor": "Run",
-    "Jest.Contact List Tests: .should handle failed contacts .executor": "Run",
-    "Jest.Mocked API Tests.Confirm that ContactsList is Populated with John on successful call.executor": "Run",
-    "Jest.Mocked API Tests.ContactsComponent Tests.should delete a contact without waitFor().executor": "Run",
-    "Jest.Mocked API Tests.should add a contact.executor": "Run",
-    "Jest.Mocked API Tests.shows error message on API failure.executor": "Debug",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/brettcunningham/code-sankofa/study/typescript/interview-prep-react/apex-phonebook-react/phonebook/src",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs.jest.jest_package": "/Users/brettcunningham/code-sankofa/study/typescript/interview-prep-react/apex-phonebook-react/phonebook/node_modules/react-scripts",
-    "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "/Users/brettcunningham/code-sankofa/study/typescript/interview-prep-react/apex-phonebook-react/phonebook/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Jest.Contact Form Tests: .should be able to input data into fields.executor&quot;: &quot;Run&quot;,
+    &quot;Jest.Contact Form: updates state for first name.executor&quot;: &quot;Run&quot;,
+    &quot;Jest.Contact List Tests: .should handle failed contacts .executor&quot;: &quot;Run&quot;,
+    &quot;Jest.Mocked API Tests.Confirm that ContactsList is Populated with John on successful call.executor&quot;: &quot;Run&quot;,
+    &quot;Jest.Mocked API Tests.ContactsComponent Tests.should delete a contact without waitFor().executor&quot;: &quot;Run&quot;,
+    &quot;Jest.Mocked API Tests.should add a contact.executor&quot;: &quot;Run&quot;,
+    &quot;Jest.Mocked API Tests.shows error message on API failure.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/brettcunningham/code-sankofa/study/typescript/interview-prep-react/apex-phonebook-react/phonebook/src&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs.jest.jest_package&quot;: &quot;/Users/brettcunningham/code-sankofa/study/typescript/interview-prep-react/apex-phonebook-react/phonebook/node_modules/react-scripts&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/brettcunningham/code-sankofa/study/typescript/apex-phonebook-react/phonebook/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/phonebook/src" />
@@ -157,6 +150,9 @@
       <workItem from="1740052669601" duration="25567000" />
       <workItem from="1740081937251" duration="608000" />
       <workItem from="1740082547748" duration="15498000" />
+      <workItem from="1740098965722" duration="20000" />
+      <workItem from="1740099055541" duration="1411000" />
+      <workItem from="1740503381947" duration="710000" />
     </task>
     <servers />
   </component>
